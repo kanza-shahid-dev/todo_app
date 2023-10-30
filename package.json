@@ -1,0 +1,51 @@
+{
+  "name": "proj-name",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.0",
+    "@mui/material": "^5.14.2",
+    "@types/react": "18.2.12",
+    "@types/react-dom": "18.2.7",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.12",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "next": "13.5.4",
+    "prettier": "^3.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
+    "@types/lodash": "^4.14.195",
+    "@types/node": "^20.4.5",
+    "@types/react-beautiful-dnd": "^13.1.4",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3"
+  },
+  "lint-staged": {
+    "./renderer/**/*.{ts,js,jsx,tsx}": [
+      "yarn lint --fix",
+      "yarn format"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
